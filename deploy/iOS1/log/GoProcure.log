@@ -1,0 +1,25 @@
+[SEVERE - oracle.adfmf.framework - Model - setBeanDefinitions] Unable to load class: "mobile.RequesitionRest" for managed bean definition bean definition - Name: RequesitionRest; Class: mobile.RequesitionRest; Scope: application
+2016-09-14 14:23:59.715 goprocure[4775:15720] Apache Cordova native platform version 3.8.0 is starting.
+2016-09-14 14:23:59.716 goprocure[4775:15720] Multi-tasking -> Device: YES, App: YES
+2016-09-14 14:23:59.967 goprocure[4775:15720] Resetting plugins due to page load.
+2016-09-14 14:24:00.229 goprocure[4775:15720] Finished load of: file:///Users/eghambaram/Library/Developer/CoreSimulator/Devices/87D41284-5D48-4872-89D9-F03E4412A116/data/Containers/Bundle/Application/DFD5B898-5E83-481F-96C8-765865590946/goprocure.app/FARs/OracleStandardADFmfUiComponents/public_html/adf.backchannel.html
+2016-09-14 14:24:01.993 goprocure[4775:15720] Back Channel Hidden Feature: Received Event: deviceready
+2016-09-14 14:24:02.004 goprocure[4775:15720] Back Channel Hidden Feature - Startup is complete.
+!!!!!!!!!!!!!! App Start !!!!!!!!!!!!!!
+2016-09-14 14:24:02.011 goprocure[4775:15720] [SEVERE - oracle.adfmf.framework - adf.mf.internal.api.pushnotifications - errorHandler] There was an error in processing this request : {"alert":"true","senderID":"438221980209","badge":"true","sound":"true","ecb":"adf.mf.internal.api.pushnotifications.onNotificationAPN"}. Error : " - REMOTE_NOTIFICATION_SIMULATOR_NOT_SUPPORTED_NSERROR_DESCRIPTION"
+SQLite.Exception: no such table: Category
+Database does not exist, creating it
+!!!!!!!!!!!!!!InitDB Start!!!!!!!!!!!!!!
+DROP TABLE IF EXISTS Categories;
+DROP TABLE IF EXISTS Cart;
+DROP TABLE IF EXISTS UserDetails;
+CREATE TABLE Categories(  id VARCHAR(30),  parentId VARCHAR(30),  name VARCHAR(3000),  source VARCHAR(30)  );
+CREATE TABLE Cart(  id VARCHAR(30),  poNo VARCHAR(300),  vendorName VARCHAR(3000),  vendorSiteCode VARCHAR(300),  productCategory VARCHAR(300),  productTitle VARCHAR(3000),  unitPrice VARCHAR(300),  imageUrl VARCHAR(3000),  checked VARCHAR(300),  source VARCHAR(30),  uom VARCHAR(300),  quantity VARCHAR(300),  amount VARCHAR(300)  );
+CREATE TABLE UserDetails(  Us_ID VARCHAR(30),  User_Name VARCHAR(30),  Hashed_Password VARCHAR(30)  );
+!!!!!!!!!!!!!!InitDB Done!!!!!!!!!!!!!!
+!!!!!!!!!!!!!! Done App Start !!!!!!!!!!!!!!
+#### Error: ERROR [oracle.adfmf.framework.exception.AdfException] - " - REMOTE_NOTIFICATION_SIMULATOR_NOT_SUPPORTED_NSERROR_DESCRIPTION"
+2016-09-14 14:24:02.325 goprocure[4775:15720] Apache Cordova native platform version 3.8.0 is starting.
+2016-09-14 14:24:02.325 goprocure[4775:15720] Multi-tasking -> Device: YES, App: YES
+2016-09-14 14:24:02.368 goprocure[4775:15720] Resetting plugins due to page load.
+2016-09-14 14:24:02.388 goprocure[4775:15720] Finished load of: file:///Users/eghambaram/Library/Developer/CoreSimulator/Devices/87D41284-5D48-4872-89D9-F03E4412A116/data/Containers/Bundle/Application/DFD5B898-5E83-481F-96C8-765865590946/goprocure.app/www/bootstrap.html?dir=ltr&lang=en&locale=en-us&applicationName=GoProcure&applicationId=com.enrich.goprocure&featureName=mp.login&featureId=mp.login&profile_json_folder_override=%2FUsers%2Feghambaram%2FLibrary%2FDeveloper%2FCoreSimulator%2FDevices%2F87D41284-5D48-4872-89D9-F03E4412A116%2Fdata%2FContainers%2FData%2FApplication%2FF0C53281-1DB4-4951-955F-60C20D5DA654%2FDocuments%2FbaseProfiles&appStartTime=1473843235005.474121&webviewStartTime=1473843242346.236084&springboardFeature=false&file=mp.login/login-task-flow.xml%23login-task-flow&featureRoot=../FARs/ViewController&topContentOffset=20
